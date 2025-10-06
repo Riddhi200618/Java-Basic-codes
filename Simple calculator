@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int num1,num2,ch,sum,diff,mul,div,rem,exp;
+        exp=1;
+        System.out.println("Enter First number:");
+        num1=sc.nextInt();
+        System.out.println("Enter Second number:");
+        num2=sc.nextInt();
+        
+        System.out.println("1.Add 2.Subtract 3.Multiply 4.Divide 5.remainder 6.Exponent 7.Exit");
+        ch=sc.nextInt();
+        
+        switch(ch){
+            case 1:
+            sum= num1+num2;
+            System.out.println("Sum"+ sum);
+            break;
+            case 2:
+            diff= num1-num2;
+            System.out.println("diff"+ diff);
+            break;
+            case 3:
+            mul= num1*num2;
+            System.out.println("mul"+ mul);
+            break;
+            case 4:
+            div= num1/num2;
+            System.out.println("div"+ div);
+            break;
+            case 5:
+            rem= num1%num2;
+            System.out.println("rem"+ rem);
+            break;
+            case 6:
+            for(int i=1; i<=num2; i++){
+                exp= exp * num1;
+            }
+            System.out.println("exp:"+ exp);
+            break;
+            case 7:
+            System.out.println("Exiting");
+            return;
+            default:
+            System.out.println("Invalid choice");
+        }
+    }
+}
