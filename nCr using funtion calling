@@ -1,0 +1,33 @@
+mport java.util.Scanner;
+
+
+class Main {
+    
+    int fact(int n){
+    int n1=1;
+    for(int i=1; i<=n; i++){
+        n1=n1*i;
+    }
+    return n1;
+        
+    }
+
+    public static void main(String[] args) {
+        int nn,rn,nrn,c,c1;
+        Scanner sc= new Scanner(System.in);
+        Main ft= new Main();
+        System.out.println("Enter value of n:");
+        nn=sc.nextInt();
+        System.out.println("Enter value of r:");
+        rn=sc.nextInt();
+        nrn=nn-rn;
+        int n=ft.fact(nn);
+        int r=ft.fact(rn);
+        int p=ft.fact(nrn);
+        
+        c1=p*r;
+        c=n/c1;
+        
+        System.out.println("Applying nCr we get:"+ c);
+    }
+}
