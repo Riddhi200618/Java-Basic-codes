@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+    int maximum(int n, int p,int q){
+        int m=Math.max(n,p);
+        if(m<q){
+            m=q;
+            return m;
+        }else{
+            return m;
+        }
+    }
+    
+    int minimum(int n,int p,int q){
+        int r=Math.min(n,p);
+        if(r>q){
+            r=q;
+            return r;
+        }else{
+            return r;
+        }
+    }
+    
+    public static void main (String[] args){
+        int n,p,q;
+        Scanner sc= new Scanner(System.in);
+        Main m= new Main();
+        System.out.println("Enter value of n:");
+        n=sc.nextInt();
+        System.out.println("Enter value of p:");
+        p=sc.nextInt();
+        System.out.println("Enter value of q:");
+        q=sc.nextInt();
+        
+        int rel1=m.maximum(n,p,q);
+        int rel2=m.minimum(n,p,q);
+        
+        System.out.println("MAX IS:" + rel1);
+        System.out.println("MIN IS:" + rel2);
+    }
+}
