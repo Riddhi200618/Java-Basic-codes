@@ -4,7 +4,7 @@ public class Main {
     String year(int n){
         String z="yes";
         String x="no";
-        if(n%4==0 && n%100!=0 || n%100==0 && n%400==0){
+        if((n%4==0 && n%100!=0) || (n%100==0 && n%400==0)){
             return z;
         }else {
             return x;
