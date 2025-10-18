@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int[] arr={1,7,5,7,9};
+        int key=7;
+        Boolean flag=false;
+        
+        for(int i=0; i<5; i++){
+        if(arr[i]==key){
+            System.out.println("key is at "+(i+1));
+            flag=true;
+            break;
+            }
+        }
+        if(flag==false){
+          System.out.println("key is not in array");  
+        }
+    }
+    }
